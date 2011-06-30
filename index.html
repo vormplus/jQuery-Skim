@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="language" content="en"/>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<title>jQuery Skim</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="css/skim.css" type="text/css" media="screen" charset="utf-8" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.skim.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(window).bind("load", function() {
+				$(".skim-me").skim();
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="container">
+	<h1>jQuery Skim</h1>
+	
+	<p>This is what the widget looks like. Note that all images should be the same size.<br />
+	The jQuery plugin is released under the MIT License.<br />
+	Images used on this page &copy; 2009 Jan Vantomme, All Rights Reserved.</p>
+
+	<div class="preview">	
+		<div class="skim-me">
+			<h3>My Images</h3>
+			<ul>
+				<li><a href="#"><img src="images/001.jpg" width="150" height="150" alt="" /></a></li>
+				<li><a href="#"><img src="images/002.jpg" width="150" height="150" alt="" /></a></li>
+				<li><a href="#"><img src="images/003.jpg" width="150" height="150" alt="" /></a></li>
+				<li><a href="#"><img src="images/004.jpg" width="150" height="150" alt="" /></a></li>
+				<li><a href="#"><img src="images/005.jpg" width="150" height="150" alt="" /></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<h2>HTML</h2>
+
+<div class="preview">
+<pre><code>
+&lt;div class="skim-me"&gt;
+    &lt;h3&gt;My Images&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#">&lt;img src="images/001.jpg" width="150" height="150" alt="Image 1" /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#">&lt;img src="images/002.jpg" width="150" height="150" alt="Image 2" /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#">&lt;img src="images/003.jpg" width="150" height="150" alt="Image 3" /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#">&lt;img src="images/004.jpg" width="150" height="150" alt="Image 4" /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#">&lt;img src="images/005.jpg" width="150" height="150" alt="Image 5" /&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+	<h2>JavaScript</h2>
+
+<div class="preview">
+<pre><code>
+&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/jquery.skim.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    $(document).ready(function() {
+        $(window).bind("load", function() {
+            $(".skim-me").skim();
+        });
+    });
+&lt;/script&gt;
+</code></pre>
+</div>
+
+</div>
+</body>
+</html>
